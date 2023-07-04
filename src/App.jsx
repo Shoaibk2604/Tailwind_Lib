@@ -7,7 +7,7 @@ import Home from "./pages/GettingStarted/Home";
 import Reacts from "./pages/Integration Guides/Reacts";
 import Nexts from "./pages/Integration Guides/Nexts";
 import Card from "./components/Card";
-import Drawer from "./pages/Component/Drawer";
+import Drawer from "./components/Drawer";
 import DropDown from "./pages/Component/DropDown";
 import Footer from "./pages/Component/Footer";
 import MegaMenu from "./pages/Component/MegaMenu";
@@ -26,6 +26,7 @@ import BottomNavPage from "./pages/Component/BottomNavPage";
 import BreadCrumbPage from "./pages/Component/BreadCrumbPage";
 import ButtonPage from "./pages/Component/ButtonPage";
 import CardPage from "./pages/Component/CardPage";
+import DrawerPage from "./pages/Component/DrawerPage";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
           <Route path="/breadCrumb" element={<BreadCrumbPage />} />
           <Route path="/buttons" element={<ButtonPage />} />
           <Route path="/card" element={<CardPage />} />
-          <Route path="/drawer" element={<Drawer />} />
+          <Route path="/drawer" element={<DrawerPage />} />
           <Route path="/dropDowns" element={<DropDown />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/megaMenu" element={<MegaMenu />} />

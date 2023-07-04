@@ -12,7 +12,7 @@ const Drawer = () => {
     }
   };
   return (
-    <div className="bg-main z-19">
+    <>
       <div className="text-center">
         <button
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -22,12 +22,11 @@ const Drawer = () => {
           Show navigation
         </button>
       </div>
-
       <div
         className={
           drawerOpen
-            ? "fixed top-20 right-1/3 z-40 h-screen p-4 overflow-y-auto transition-all ease-in-out duration-300 -translate-x-full bg-white w-80 dark:bg-gray-800"
-            : "fixed top-20 right-1/2 z-40 h-screen p-4 overflow-y-auto transition-all ease-in-out duration-300 -translate-x-full bg-white w-80 dark:bg-gray-800"
+            ? "absolute top-0 left-80   h-screen p-4 overflow-y-auto transition-all ease-in-out duration-300 -translate-x-full bg-white w-80 dark:bg-gray-800"
+            : "absolute top-0 left-0  h-screen p-4 overflow-y-auto transition-all ease-in-out duration-300 -translate-x-full bg-white w-80 dark:bg-gray-800"
         }
       >
         <h5
@@ -270,7 +269,7 @@ const Drawer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
