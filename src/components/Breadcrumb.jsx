@@ -2,9 +2,8 @@ import React from "react";
 
 const Breadcrumb = () => {
   return (
-    <div className="bg-main z-19">
-      <nav className="flex" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3">
+      <nav className="flex" >
+        <ol className="inline-flex m-auto items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
             <a
               href="#"
@@ -67,7 +66,6 @@ const Breadcrumb = () => {
           </li>
         </ol>
       </nav>
-    </div>
   );
 };
 

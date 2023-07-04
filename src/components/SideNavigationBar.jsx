@@ -50,9 +50,7 @@ const SideNavigationBar = () => {
           <li className="hover:text-slate-50 cursor-pointer my-1">
             <Link to="/buttons">Buttons</Link>
           </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/buttonGroup">Button Group</Link>
-          </li>
+
           <li className="hover:text-slate-50 cursor-pointer my-1">
             <Link to="/card">Card</Link>
           </li>
