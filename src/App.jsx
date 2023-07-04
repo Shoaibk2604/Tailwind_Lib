@@ -6,8 +6,7 @@ import Quickstart from "./pages/GettingStarted/Quickstart";
 import Home from "./pages/GettingStarted/Home";
 import Reacts from "./pages/Integration Guides/Reacts";
 import Nexts from "./pages/Integration Guides/Nexts";
-import Accordion from "./pages/Component/Accordion";
-import Banner from "./pages/Component/Banner";
+import Banner from "./components/Banner";
 import BottomNavigation from "./pages/Component/BottomNavigation";
 import Breadcrumb from "./pages/Component/Breadcrumb";
 import Buttons from "./pages/Component/Buttons";
@@ -20,13 +19,14 @@ import MegaMenu from "./pages/Component/MegaMenu";
 import Modal from "./pages/Component/Modal";
 import NavBar from "./pages/Component/NavBar";
 import Pagination from "./pages/Component/Pagination";
-import Rating from "./pages/Component/SideBar";
 import SideBar from "./pages/Component/SideBar";
 import Spinner from "./pages/Component/Spinner";
 import Stepper from "./pages/Component/Stepper";
 import Table from "./pages/Component/Table";
 import Tab from "./pages/Component/Tab";
 import TimeLine from "./pages/Component/TimeLine";
+import AccordianPage from "./pages/Component/AccordianPage";
+import BannerPage from "./pages/Component/BannerPage";
 
 function App() {
   return (
@@ -38,8 +38,8 @@ function App() {
           <Route path="/quickstart" element={<Quickstart />} />
           <Route path="/react" element={<Reacts />} />
           <Route path="/next" element={<Nexts />} />
-          <Route path="/accordion" element={<Accordion />} />
-          <Route path="/banner" element={<Banner/>} />
+          <Route path="/accordion" element={<AccordianPage/>} />
+          <Route path="/banner" element={<BannerPage/>} />
           <Route path="/bottomNavigation" element={<BottomNavigation/>} />
           <Route path="/breadCrumb" element={<Breadcrumb />} />
           <Route path="/buttons" element={<Buttons />} />
