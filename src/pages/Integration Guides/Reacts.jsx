@@ -44,7 +44,7 @@ const Reacts = () => {
           Create React App
         </h2>
         <p className="text-xl font-semibold text-slate-400 py-2">
-          Follow the next steps to install Tailwind CSS and Flowbite with Create
+          Follow the next steps to install Tailwind CSS and Tailwind with Create
           React App.
         </p>
         <p className="text-xl font-semibold text-slate-400 py-2">

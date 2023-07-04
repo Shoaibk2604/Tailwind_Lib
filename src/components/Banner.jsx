@@ -29,10 +29,10 @@ const Banner = () => {
           <span>
             New brand identity has been launched for the{" "}
             <a
-              href="https://flowbite.com"
+              href="#"
               className="inline font-medium text-blue-600 underline dark:text-blue-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
             >
-              Flowbite Library
+              Tailwind Library
             </a>
           </span>
         </p>

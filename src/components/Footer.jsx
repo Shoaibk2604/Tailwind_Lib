@@ -10,7 +10,7 @@ const Footer = () => {
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
                   className="h-8 mr-3"
-                  alt="FlowBite Logo"
+                  alt="Logo"
                 />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Tailwind
@@ -24,7 +24,7 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-600 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
+                    <a href="#" className="hover:underline">
                       Tailwind
                     </a>
                   </li>

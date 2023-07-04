@@ -16,7 +16,7 @@ const Nexts = () => {
         <h2 className="text-2xl font-semibold text-slate-50">Requirements</h2>
         <p className="text-xl font-semibold text-slate-400 py-2">
           Make sure that you have Node.js installed on your computer to be able
-          to install Next.js, Tailwind CSS and Flowbite using NPX and NPM.
+          to install Next.js, Tailwind CSS and Tailwind using NPX and NPM.
         </p>
       </div>
 
