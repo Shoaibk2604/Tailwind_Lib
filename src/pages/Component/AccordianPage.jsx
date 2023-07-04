@@ -17,11 +17,12 @@ const AccordianPage = () => {
           header and body elements that can be used to show and hide information
           based on the Tailwind CSS utility classes.
         </p>
-        <h2 className="text-3xl font-semibold text-slate-50">Default accordion</h2>
+        <h2 className="text-3xl font-semibold text-slate-50">
+          Default accordion
+        </h2>
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
-      <Accordion />
-
+        <Accordion />
       </div>
     </div>
   );

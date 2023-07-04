@@ -6,8 +6,6 @@ import Quickstart from "./pages/GettingStarted/Quickstart";
 import Home from "./pages/GettingStarted/Home";
 import Reacts from "./pages/Integration Guides/Reacts";
 import Nexts from "./pages/Integration Guides/Nexts";
-import Banner from "./components/Banner";
-import BottomNavigation from "./pages/Component/BottomNavigation";
 import Breadcrumb from "./pages/Component/Breadcrumb";
 import Buttons from "./pages/Component/Buttons";
 import Card from "./pages/Component/Card";
@@ -27,6 +25,7 @@ import Tab from "./pages/Component/Tab";
 import TimeLine from "./pages/Component/TimeLine";
 import AccordianPage from "./pages/Component/AccordianPage";
 import BannerPage from "./pages/Component/BannerPage";
+import BottomNavPage from "./pages/Component/BottomNavPage";
 
 function App() {
   return (
@@ -40,7 +39,7 @@ function App() {
           <Route path="/next" element={<Nexts />} />
           <Route path="/accordion" element={<AccordianPage/>} />
           <Route path="/banner" element={<BannerPage/>} />
-          <Route path="/bottomNavigation" element={<BottomNavigation/>} />
+          <Route path="/bottomNavigation" element={<BottomNavPage/>} />
           <Route path="/breadCrumb" element={<Breadcrumb />} />
           <Route path="/buttons" element={<Buttons />} />
           <Route path="/buttonGroup" element={<ButtonGroup/>} />
