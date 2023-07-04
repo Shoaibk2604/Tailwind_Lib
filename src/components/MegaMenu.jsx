@@ -10,7 +10,6 @@ const MegaMenu = () => {
     }
   };
   return (
-    <div className="bg-main z-19">
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
           <a href="/" className="flex items-center">
@@ -352,7 +351,6 @@ const MegaMenu = () => {
           </div>
         </div>
       </nav>
-    </div>
   );
 };
 

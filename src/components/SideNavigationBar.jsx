@@ -81,13 +81,7 @@ const SideNavigationBar = () => {
           </li>
 
           <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/spinner">Spinner</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
             <Link to="/stepper">Stepper</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/table">Tables</Link>
           </li>
           <li className="hover:text-slate-50 cursor-pointer my-1">
             <Link to="/tab">Tab</Link>

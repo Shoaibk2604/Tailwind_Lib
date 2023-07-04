@@ -4,9 +4,9 @@ import { useState } from "react";
 const Modal = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="bg-main z-19">
+    <div >
       <button
-        className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="block m-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         type="button"
         onClick={() => setOpenModal(true)}
       >
@@ -18,8 +18,8 @@ const Modal = () => {
         tabIndex="-1"
         className={
           openModal
-            ? "fixed top-0 left-0 right-0 z-50 block p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-            : "fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            ? "absolute top-0 left-0 right-0 z-50 block p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            : "absolute top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
         }
       >
         <div className="relative w-full max-w-md max-h-full">

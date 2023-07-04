@@ -2,7 +2,7 @@ import React from "react";
 
 const Pagination = () => {
   return (
-    <div className="bg-main z-19">
+    <div >
       <div className="flex flex-col items-center">
         <span className="text-sm text-gray-700 dark:text-gray-400">
           Showing{" "}
