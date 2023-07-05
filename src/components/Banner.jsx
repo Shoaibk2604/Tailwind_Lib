@@ -3,7 +3,6 @@ import { useState } from "react";
 
 const Banner = () => {
   const [close, setClose] = useState(false);
-
   return (
     <div
       className={
