@@ -81,7 +81,7 @@ const first = [
     link: "/",
   },
   {
-    title: "quickstart",
+    title: "Quickstart",
     link: "/quickstart",
   },
 ];
@@ -123,6 +123,10 @@ const sideBarLinks = [
   {
     title: "Dropdowns",
     link: "/dropdowns",
+  },
+  {
+    title: "Drawer",
+    link: "/drawer",
   },
   {
     title: "Footer",

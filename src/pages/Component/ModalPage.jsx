@@ -104,7 +104,7 @@ const ModalPage = () => {
 
         <h2 className="text-3xl font-semibold text-slate-50">Default Modal</h2>
       </div>
-      <div className="relative text-cyan-400 w-2/3 h-auto m-auto bg-trasparent border-2 p-5 rounded-xl">
+      <div className="relative text-cyan-400 w-2/3 h-1/2 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Modal />
       </div>
       <SyntaxCodeHighlighter code={codeSyntax} />

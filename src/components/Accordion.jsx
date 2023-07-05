@@ -42,7 +42,7 @@ const Accordion = () => {
           <p className="text-gray-500 dark:text-gray-400">
             Check out this guide to learn how to{" "}
             <a
-              href="/docs/getting-started/introduction/"
+              href="#"
               className="text-blue-600 dark:text-blue-500 hover:underline"
             >
               get started
