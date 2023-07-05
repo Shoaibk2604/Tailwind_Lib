@@ -93,8 +93,8 @@ const BreadCrumbPage = () => {
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Breadcrumb />
-        <SyntaxCodeHighlighter code={codeString} />
       </div>
+      <SyntaxCodeHighlighter code={codeString} />
     </div>
   );
 };

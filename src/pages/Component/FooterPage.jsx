@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import SyntaxCodeHighlighter from "../../components/SyntaxCodeHighlighter";
 
 const FooterPage = () => {
-  const codeSyntax =`import React from "react";
+  const codeSyntax = `import React from "react";
 
   const Footer = () => {
     return (
@@ -186,7 +186,7 @@ const FooterPage = () => {
   };
   
   export default Footer;
-  `
+  `;
   return (
     <div className="bg-main z-19">
       <div className=" mx-8 py-6">
@@ -199,14 +199,12 @@ const FooterPage = () => {
           links, a copyright notice, and a logo
         </p>
 
-        <h2 className="text-3xl font-semibold text-slate-50">
-          Default Footer
-        </h2>
+        <h2 className="text-3xl font-semibold text-slate-50">Default Footer</h2>
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Footer />
-        <SyntaxCodeHighlighter code={codeSyntax} />
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };

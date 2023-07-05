@@ -102,14 +102,12 @@ const ModalPage = () => {
           to your website users available in multiple sizes, colors, and styles
         </p>
 
-        <h2 className="text-3xl font-semibold text-slate-50">
-          Default Modal
-        </h2>
+        <h2 className="text-3xl font-semibold text-slate-50">Default Modal</h2>
       </div>
       <div className="relative text-cyan-400 w-2/3 h-auto m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Modal />
-        <SyntaxCodeHighlighter code={codeSyntax}/>
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };

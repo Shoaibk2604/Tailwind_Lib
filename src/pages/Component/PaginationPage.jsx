@@ -137,8 +137,8 @@ const PaginationPage = () => {
       </div>
       <div className="relative text-cyan-400 w-2/3 h-auto m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Pagination />
-        <SyntaxCodeHighlighter code={codeSyntax} />
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };

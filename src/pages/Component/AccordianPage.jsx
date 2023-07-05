@@ -1,11 +1,8 @@
 import React from "react";
 import Accordion from "../../components/Accordion";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { useState } from "react";
+import SyntaxCodeHighlighter from "../../components/SyntaxCodeHighlighter";
 const AccordianPage = () => {
-  const [copy, setCopy] = useState(false);
-  const codeString = `import React from "react";
+  const codeSyntax = `import React from "react";
   import { useState } from "react";
   
   const Accordion = () => {
@@ -196,37 +193,8 @@ const AccordianPage = () => {
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Accordion />
-        <div className="max-w-3xl min-w-[25rem] bg-[#3a404d] overflow-hidden">
-          <div className="flex justify-between px-4 text-white text-xs items-center">
-            <p className="text-sm">Code</p>
-            {copy ? (
-              <button className="py-1 inline-flex items-center gap-1 text-sm">
-                Copied!
-              </button>
-            ) : (
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(codeString);
-                  setCopy(true);
-                  setTimeout(() => {
-                    setCopy(false);
-                  },2000)
-                }}
-                className="py-1 inline-flex items-center gap-1 text-sm"
-              >
-                Copy Code
-              </button>
-            )}
-          </div>
-          <SyntaxHighlighter
-            language="javascript"
-            style={atomOneDark}
-            customStyle={{ padding: "20px", height: "30rem" }}
-          >
-            {codeString}
-          </SyntaxHighlighter>
-        </div>
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };

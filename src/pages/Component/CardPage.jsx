@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import SyntaxCodeHighlighter from "../../components/SyntaxCodeHighlighter";
 
 function CardPage() {
-  const codeSyntax=`import React from "react";
+  const codeSyntax = `import React from "react";
 
   const Card = () => {
     return (
@@ -41,7 +41,7 @@ function CardPage() {
   };
   
   export default Card;
-  `
+  `;
   return (
     <div className="bg-main z-19">
       <div className=" mx-8 py-6">
@@ -51,13 +51,13 @@ function CardPage() {
           your web project
         </p>
         <h2 className="text-3xl font-semibold text-slate-50">
-        Card with button
+          Card with button
         </h2>
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Card />
-        <SyntaxCodeHighlighter code={codeSyntax} />
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 }

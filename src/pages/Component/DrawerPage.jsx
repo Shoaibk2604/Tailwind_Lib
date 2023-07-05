@@ -3,7 +3,7 @@ import Drawer from "../../components/Drawer";
 import SyntaxCodeHighlighter from "../../components/SyntaxCodeHighlighter";
 
 function DrawerPage() {
-  const codeSyntax =`import React from "react";
+  const codeSyntax = `import React from "react";
   import { useState } from "react";
   
   const Drawer = () => {
@@ -279,7 +279,7 @@ function DrawerPage() {
   };
   
   export default Drawer;
-  `
+  `;
   return (
     <div className="bg-main z-19">
       <div className=" mx-8 py-6">
@@ -298,8 +298,8 @@ function DrawerPage() {
       </div>
       <div className="relative overflow-hidden text-cyan-400 w-full h-full  m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Drawer />
-        <SyntaxCodeHighlighter code={codeSyntax} />
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 }

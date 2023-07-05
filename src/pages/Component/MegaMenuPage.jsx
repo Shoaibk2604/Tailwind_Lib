@@ -379,8 +379,8 @@ const MegaMenuPage = () => {
       </div>
       <div className="text-cyan-400 w-2/3 m-auto bg-trasparent border-2 p-5 rounded-xl">
         <MegaMenu />
-        <SyntaxCodeHighlighter code={codeSyntax} />
       </div>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };

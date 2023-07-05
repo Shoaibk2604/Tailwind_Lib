@@ -5,7 +5,7 @@ const SyntaxCodeHighlighter = (props) => {
     
   const [copy, setCopy] = useState(false);
   return (
-    <div className="max-w-3xl min-w-[25rem] bg-[#3a404d] overflow-hidden border-2 m-auto">
+    <div className="max-w-3xl min-w-[25rem] bg-[#3a404d] overflow-hidden  m-auto mt-5">
       <div className="flex justify-between px-4 text-white text-xs items-center">
         <p className="text-sm">Code</p>
         {copy ? (

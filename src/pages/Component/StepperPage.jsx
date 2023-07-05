@@ -58,7 +58,7 @@ const StepperPage = () => {
       <div className="relative overflow-hidden text-cyan-400 w-2/3 h-auto m-auto bg-trasparent border-2 p-5 rounded-xl">
         <Stepper />
       </div>
-        <SyntaxCodeHighlighter code={codeSyntax}/>
+      <SyntaxCodeHighlighter code={codeSyntax} />
     </div>
   );
 };
