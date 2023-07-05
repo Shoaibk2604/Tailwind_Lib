@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const SideNavigationBar = () => {
+  const route = useLocation();
+
   return (
     <div className="bg-white overflow-y-auto dark:bg-gray-900 fixed h-screen  w-1/6 z-19 top-16 py-10 px-5 border-t-[2px] border-gray-200 dark:border-gray-600">
       <div>
@@ -9,12 +11,20 @@ const SideNavigationBar = () => {
           Getting Started
         </h3>
         <ul className="text-slate-400  text-md  tracking-wide py-1">
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/">Introduction</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/quickstart">Quickstart</Link>
-          </li>
+          {first.map((elem, index) => {
+            return (
+              <li
+                key={index}
+                className={
+                  route.pathname == elem.link
+                    ? "hover:text-slate-50 text-slate-50 cursor-pointer my-1"
+                    : "hover:text-slate-50 cursor-pointer my-1"
+                }
+              >
+                <Link to={elem.link}>{elem.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="my-6">
@@ -22,12 +32,20 @@ const SideNavigationBar = () => {
           INTEGRATION GUIDES
         </h3>
         <ul className="text-slate-400  text-md  tracking-wide py-1">
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/react">React</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/next">Next.js</Link>
-          </li>
+          {second.map((elem, index) => {
+            return (
+              <li
+                key={index}
+                className={
+                  route.pathname == elem.link
+                    ? "hover:text-slate-50 text-slate-50 cursor-pointer my-1"
+                    : "hover:text-slate-50 cursor-pointer my-1"
+                }
+              >
+                <Link to={elem.link}>{elem.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="my-6">
@@ -35,60 +53,20 @@ const SideNavigationBar = () => {
           Components
         </h3>
         <ul className="text-slate-400  text-md  tracking-wide py-1">
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/accordion">Accordion</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/banner">Banner</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/bottomNavigation">Bottom Navigation</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/breadcrumb">Breadcrumb</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/buttons">Buttons</Link>
-          </li>
-
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/card">Card</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/drawer">Drawer</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/dropdowns">Dropdowns</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/footer">Footer</Link>
-          </li>
-
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/megaMenu">Mega menu</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/modal">Modal</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/navBar">Navbar</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/pagination">Pagination</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/sideBar">Sidebar</Link>
-          </li>
-
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/stepper">Stepper</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/tab">Tab</Link>
-          </li>
-          <li className="hover:text-slate-50 cursor-pointer my-1">
-            <Link to="/timeline">Timeline</Link>
-          </li>
+          {sideBarLinks.map((elem, index) => {
+            return (
+              <li
+                key={index}
+                className={
+                  route.pathname == elem.link
+                    ? "hover:text-slate-50 text-slate-50 cursor-pointer my-1"
+                    : "hover:text-slate-50 cursor-pointer my-1"
+                }
+              >
+                <Link to={elem.link}>{elem.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
@@ -96,3 +74,90 @@ const SideNavigationBar = () => {
 };
 
 export default SideNavigationBar;
+
+const first = [
+  {
+    title: "Introduction",
+    link: "/",
+  },
+  {
+    title: "quickstart",
+    link: "/quickstart",
+  },
+];
+const second = [
+  {
+    title: "React",
+    link: "/react",
+  },
+  {
+    title: "Next.js",
+    link: "/next",
+  },
+];
+const sideBarLinks = [
+  {
+    title: "Accordion",
+    link: "/accordion",
+  },
+  {
+    title: "Banner",
+    link: "/banner",
+  },
+  {
+    title: "Bottom Navigation",
+    link: "/bottomNavigation",
+  },
+  {
+    title: "Breadcrumb",
+    link: "/breadCrumb",
+  },
+  {
+    title: "Buttons",
+    link: "/buttons",
+  },
+  {
+    title: "Card",
+    link: "/card",
+  },
+  {
+    title: "Dropdowns",
+    link: "/dropdowns",
+  },
+  {
+    title: "Footer",
+    link: "/footer",
+  },
+  {
+    title: "Mega Menu",
+    link: "/megaMenu",
+  },
+  {
+    title: "Modal",
+    link: "/modal",
+  },
+  {
+    title: "NavBar",
+    link: "/navBar",
+  },
+  {
+    title: "Pagination",
+    link: "/pagination",
+  },
+  {
+    title: "Sidebar",
+    link: "/sideBar",
+  },
+  {
+    title: "Stepper",
+    link: "/stepper",
+  },
+  {
+    title: "Tab",
+    link: "/tab",
+  },
+  {
+    title: "Timeline",
+    link: "/timeline",
+  },
+];
